@@ -343,6 +343,8 @@ const noteReducer = (state = [], action) => {
 
   return state
 }
+
+export default noteReducer
 ```
 
 The state is now an Array. <i>NEW\_NOTE</i>-type actions cause a new note to be added to the state with the [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) method. 
@@ -490,6 +492,8 @@ const noteReducer = (state = [], action) => {
       return state
   }
 }
+
+export default noteReducer
 ```
 
 We create a copy of the note whose importance has changed with the syntax [familiar from part 2](/en/part2/altering_data_in_server#changing-the-importance-of-notes), and replace the state with a new state containing all the notes which have not changed and the copy of the changed note <i>changedNote</i>.
