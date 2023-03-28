@@ -821,6 +821,7 @@ and is done by a resolver:
 Mutation: {
   // ...
   editNumber: (root, args) => {
+  //in real world, there are people with same name. I think it is better to find by id. it could be better if we notify that we use name here for simplicity. 
     const person = persons.find(p => p.name === args.name)
     if (!person) {
       return null
