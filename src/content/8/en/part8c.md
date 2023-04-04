@@ -344,7 +344,7 @@ Just like in the previous case with REST, the idea now is that a logged-in user 
 
 In the Apollo Explorer, the header is added to a query like so:
 
-![apollo explorer highlighting headers with authorization and bearer token](../../images/8/24x.png)
+![apollo explorer highlighting headers with authorization and bearer token](../../images/8/24x.png) // on picture, headers authorization: "bearer ...". but "Bearer ..." is working when I experiment on apollo.
 
 Modify the startup of the backend by giving the function that handles the startup [startStandaloneServer](https://www.apollographql.com/docs/apollo-server/api/standalone/) another parameter [context](https://www.apollographql.com/docs/apollo-server/data/context/)
 
