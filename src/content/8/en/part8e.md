@@ -370,16 +370,16 @@ const http = require('http')
 
 const jwt = require('jsonwebtoken')
 
-const JWT_SECRET = 'NEED_HERE_A_SECRET_KEY'
-
 const mongoose = require('mongoose')
 
 const User = require('./models/user')
 
 const typeDefs = require('./schema')
 const resolvers = require('./resolvers')
+  
+require("dotenv").config();
 
-const MONGODB_URI = 'mongodb+srv://databaseurlhere'
+const MONGODB_URI = process.env.MONGODB_URI;
 
 console.log('connecting to', MONGODB_URI)
 
