@@ -370,7 +370,7 @@ Use types properly in the backend! For now, there is no need to do a proper vali
 
 #### 9.23: Patientor, step4
 
-Extend a patient's page in the frontend to list the *date*, *description* and *diagnoseCodes* of the patient's entries.
+Extend a patient's page in the frontend to list the *date*, *description* and *diagnosisCodes* of the patient's entries.
 
 You can use the same type definition for an *Entry* in the frontend. For these exercises, it is enough to just copy/paste the definitions from the backend to the frontend.
 
