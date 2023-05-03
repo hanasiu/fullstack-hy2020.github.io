@@ -90,7 +90,9 @@ Let us now run the script *npm start*
 >error:03000086:digital envelope routines::initialization
 >```
 >
-> <i>the problem is most likely your Node version. In case of problems, switch to version *16.19.0*. See eg. [here](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported) for more.</i>
+> <i>
+  is most likely your Node version. In case of problems, switch to version *16.19.0*. See eg. [here](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported) for more.</i>
+  - On link to Stackoverflow, downgrade to version 16.19.0 leads to security issue. 'npm audit fix --force' is more safe solution.
 
 The script starts the [Metro bundler](https://facebook.github.io/metro/) which is a JavaScript bundler for React Native. It can be described as the [Webpack](https://webpack.js.org/) of the React Native ecosystem. In addition to the Metro bundler, the Expo command-line interface should be open in the terminal window. The command-line interface has a useful set of commands for viewing the application logs and starting the application in an emulator or in Expo's mobile application. We will get to emulators and Expo's mobile application soon, but first, let's open our application.
   
