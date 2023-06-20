@@ -644,6 +644,27 @@ export class RepositoryListContainer extends React.Component {
   }
 }
 ```
+Using class component is not familiar for most of us. so I use useRef and useEffect.
+
+const searchInput = React.useRef(null);
+  useEffect(() => {
+    if (searchInput.current) {
+      searchInput.current.focus();
+    }
+  }, [searchQuery]);
+
+  return (
+    <View style={{ .... }}>
+      <Searchbar
+        ref={searchInput}
+        .....
+        value={searchQuery}
+        .....
+      />
+    </View>
+  );
+
+  //
 
 The final version of the filtering feature should look something like this:
 
